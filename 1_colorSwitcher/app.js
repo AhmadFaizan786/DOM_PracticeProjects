@@ -1,6 +1,5 @@
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
-const myBtn = document.querySelector('.btn');
 
 buttons.forEach(function(button){
     console.log(button);
