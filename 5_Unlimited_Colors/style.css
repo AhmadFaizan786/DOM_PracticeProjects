@@ -1,0 +1,32 @@
+body {
+    background-color: #212121;
+    color: white;
+    margin: 0; /* Remove default margin for full-screen background */
+    overflow: hidden; /* Hide potential scrollbars */
+  }
+
+  .myButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #start, #stop {
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #cccccc;
+    cursor: pointer;
+  }
+  
+  #start:hover, #stop:hover {
+    background-color: #dddddd;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
