@@ -1,0 +1,98 @@
+/* Reset basic browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: #734B5E;
+  }
+  
+  /* Container for overall layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+  
+  /* Bar with input and button */
+  #bar-btn {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 1rem auto;
+  }
+  
+  #city-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  
+  #btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #btn:hover {
+    background-color: #d8ab9cc8;
+  }
+  
+  /* Details section */
+  .details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    h1 {
+      font-size: 1.5em;
+    }
+    .details {
+      font-size: 0.6rem; /* Adjust font size for better reading */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Additional adjustments for even smaller screens */
+    #city-input,
+    #btn {
+      width: 100%; /* Make input and button full width */
+    }
+  }
+
+  @media (max-width:300px){
+    #bar-btn {
+      flex-direction: column; /* Stack input and button on small screens */
+    }
+  }
+  
+  /* Add more styles for specific elements and interactions as needed */
+  
